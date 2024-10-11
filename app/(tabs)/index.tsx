@@ -170,7 +170,10 @@ export default function Map() {
             coordinate={marker}
             // image={require('../../assets/images/ic_location.png')}
             pinColor="orange">
-            <Callout style={styles.marker}>
+            <Callout
+              style={styles.marker}
+              //  tooltip={true}
+            >
               <View style={styles.markerContainer}>
                 <Text style={{fontSize: 20}}>{marker.name}</Text>
                 <View style={{flexDirection: 'row'}}>
